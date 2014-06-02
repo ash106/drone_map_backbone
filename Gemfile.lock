@@ -41,6 +41,8 @@ GEM
       ejs
       jquery-rails
       railties
+    bootstrap-sass (3.1.1.1)
+      sass (~> 3.2)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -143,6 +145,7 @@ PLATFORMS
 
 DEPENDENCIES
   backbone-on-rails
+  bootstrap-sass
   coffee-rails (~> 4.0.0)
   figaro
   handlebars_assets
