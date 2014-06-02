@@ -3,7 +3,9 @@ window.DroneMapBackbone =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: ->
+    new DroneMapBackbone.Routers.Strikes
+    Backbone.history.start()
 
 $(document).ready ->
   DroneMapBackbone.initialize()

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require underscore
+//= require handlebars.runtime
 //= require backbone
 //= require drone_map_backbone
 //= require_tree ../templates

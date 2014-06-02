@@ -1,0 +1,9 @@
+{{#unless strikes.length}}
+  <p>Loading...</p>
+{{/unless}}
+
+{{#if strikes.length}}
+  <p>{{strikes.status}}</p>
+  <p>{{strikes.length}}</p>
+  <ul id="strikes"></ul>
+{{/if}}
