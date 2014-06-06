@@ -18,4 +18,6 @@ class DroneMapBackbone.Views.Strike extends Backbone.View
     @$el.toggleClass('hover')
 
   setCurrentStrike: ->
-    alert "##{@model.get('number')} - #{@options.marker.getPosition()}"
+    # alert "##{@model.get('number')} - #{@options.marker.getPosition()}"
+    @options.marker.getMap().setCenter(@options.marker.getPosition())
+    @options.marker.getMap().setZoom(14)
