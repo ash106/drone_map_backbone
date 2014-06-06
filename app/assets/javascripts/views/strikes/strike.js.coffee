@@ -1,5 +1,5 @@
 class DroneMapBackbone.Views.Strike extends Backbone.View
-  tagName: 'li'
+  tagName: 'tr'
   template: HandlebarsTemplates['strikes/strike']
 
   events:

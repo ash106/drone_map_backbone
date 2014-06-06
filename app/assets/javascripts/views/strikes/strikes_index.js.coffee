@@ -14,7 +14,7 @@ class DroneMapBackbone.Views.StrikesIndex extends Backbone.View
 
   appendStrike: (strike) ->
     view = new DroneMapBackbone.Views.Strike(model: strike)
-    $('#strikes').append(view.render().el)
+    $('#strikes > tbody:last').append(view.render().el)
 
   gm_init: ->
     mapOptions =

@@ -5,7 +5,17 @@
 {{#if strikes.length}}
   <h1 class="text-center">Drone Map</h1>
   <div id="map_canvas"></div>
-  <p>{{strikes.status}}</p>
-  <p>{{strikes.length}}</p>
-  <ul id="strikes"></ul>
+  <table id="strikes" class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Date</th>
+        <th>Country</th>
+        <th>Town</th>
+        <th>Deaths</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
 {{/if}}
