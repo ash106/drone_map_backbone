@@ -5,6 +5,10 @@ class DroneMapBackbone.Views.Strike extends Backbone.View
   events:
     'mouseenter': 'toggleHighlight'
     'mouseleave': 'toggleHighlight'
+    'click': 'setCurrentStrike'
+
+  initialize: (options) ->
+    @options = options || {}
   
   render: ->
     @$el.html(@template(strike: @model.toJSON()))
@@ -12,3 +16,6 @@ class DroneMapBackbone.Views.Strike extends Backbone.View
 
   toggleHighlight: ->
     @$el.toggleClass('hover')
+
+  setCurrentStrike: ->
+    alert "##{@model.get('number')} - #{@options.marker.getPosition()}"
